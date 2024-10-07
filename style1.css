@@ -1,0 +1,21 @@
+.text{
+    display: inline-block;
+}
+.container{
+    content:"Hello";
+    font-size: 100px;
+    border-right: 5px solid black;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: cursor .4s step-end,
+                typing 1.5s steps(14)  ; 
+    
+}
+@keyframes cursor {
+    50% {border-color: transparent;}
+    
+}
+@keyframes typing {
+    from  {width: 0;}
+}
